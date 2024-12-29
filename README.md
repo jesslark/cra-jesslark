@@ -1,5 +1,34 @@
 # Jess Lark Portfolio 2025
 
+## Ideas and Plans
+- add content
+- create dark and light templates
+- add animations in background when scrolling
+- add aniations off toggle
+- add favicon
+- actually write some blog posts
+  - French, books, learning stuff, etc
+
+## What Is This For
+
+This is a project to display some of y favorite projects, and to host my blog.
+
+## Why Build it This Way
+
+React is fun and the primary technology I work with at work. I used CRA for two reasons: 
+- One, it's a very low barrier to entry for people who are comfortable in React but haven't used  the currently recommended frameworks.
+- Two, I've struggled with getting comfortable with fixing dependencies and this seems like a great opportunity to learn. 
+
+## Hosting
+
+This project is hosted on hithub pages because it is free and easy to use.
+
+## Updating the App
+
+### MUI Icons
+Usage: https://mui.com/material-ui/icons/
+Available Icons: https://mui.com/material-ui/material-icons/?theme=Two+tone#search-material-icons
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

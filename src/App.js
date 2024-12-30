@@ -44,18 +44,39 @@ function App() {
         toggle theme
       </a> */}
       <header>
-        <a onClick={() => handleNavClick("main")} className="nav active">
-          <KeyboardArrowDownRoundedIcon className="icon" />
+        <a
+          onClick={() => handleNavClick("main")}
+          className={`nav${page === "main" ? " active" : ""}`}
+        >
+          {page === "main" ? (
+            <KeyboardArrowDownRoundedIcon className="icon" />
+          ) : (
+            <KeyboardArrowRightRoundedIcon className="icon" />
+          )}
           Jess Lark
         </a>
         &nbsp;
-        <a onClick={() => handleNavClick("projects")} className="nav">
-          <KeyboardArrowRightRoundedIcon className="icon" />
+        <a
+          onClick={() => handleNavClick("projects")}
+          className={`nav${page === "projects" ? " active" : ""}`}
+        >
+          {page === "projects" ? (
+            <KeyboardArrowDownRoundedIcon className="icon" />
+          ) : (
+            <KeyboardArrowRightRoundedIcon className="icon" />
+          )}
           Projects
         </a>
         &nbsp;
-        <a onClick={() => handleNavClick("blog")} className="nav">
-          <KeyboardArrowRightRoundedIcon className="icon" />
+        <a
+          onClick={() => handleNavClick("blog")}
+          className={`nav${page === "blog" ? " active" : ""}`}
+        >
+          {page === "blog" ? (
+            <KeyboardArrowDownRoundedIcon className="icon" />
+          ) : (
+            <KeyboardArrowRightRoundedIcon className="icon" />
+          )}
           Blog
         </a>
       </header>

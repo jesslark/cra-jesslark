@@ -1,38 +1,153 @@
-body {
-  background: white;
+:root {
+  --lightgold: #FEF1C0;
+  --gold: #E3B505;
+  --darkgold: #695401;
+  --lightred: #F9BCB5;
+  --red: #95190C;
+  --darkred: #490902;
+  --lightpurple: #FCA4E2;
+  --purple: #610345;
+  --darkpurple: #2E0021;
+  --lightgreen: #B4F5E7;
+  --green: #107D65;
+  --darkgreen: #023F32;
+  --lightblue: #ABDAFC;
+  --blue: #044B7F;
+  --darkblue: #01233C;
+
+  --mainback: var(--darkpurple);
+  --maintext: var(--gold);
+  --headerback: black;
+  --text: var(--gold);
+  --linkcolor: var(--gold);
+  --linkhover: var(--lightgold);
+
+  --content-width: 900px;
 }
 
 .app {
-  text-align: center;
-  background: deepskyblue;
+  position: relative;
+  background: var(--mainback);
+  color: var(--text);
   height: 100vh;
-}
+  
+  a {
+    color: var(--linkcolor);
+    cursor: pointer;
+    text-decoration: underline;
 
-header {
-  height: 40px;
-  background: hotpink;
-  padding: 10px;
-  margin-bottom: 20px;
-}
+    &:hover {
+      color: var(--linkhover);
+    }
+    display: flex;
+    align-items: center;
+  }
 
-.nav {
-  display: inline-block;
-  padding: 5px 15px;
-  background: white;
-}
+  .theme {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
 
-.icon {
-  line-height: 40px;
-}
+  header {
+    height: 40px;
+    width: var(--content-width);
+    padding: 9px 0;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+  }
 
-footer {
-  background: deeppink;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-}
+  .nav {
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 40px;
+    margin: 0 5px;
+    text-decoration: none;
+    flex-grow: 1;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
 
+    &:first-child {
+      background: var(--purple);
+      color: var(--lightpurple);
+    }
+    
+    &:nth-child(2) {
+      background: var(--red);
+      color: var(--lightred);
+    }
+    
+    &:nth-child(3) {
+      background: var(--blue);
+      color: var(--lightblue);
+    }
+
+    &:hover {
+      color: var(--linkhover);
+      text-decoration: underline;
+      filter: brightness(1.5);
+    }
+
+    &.active {
+      color: var(--linkhover);
+      text-decoration: none;
+      filter: brightness(1.5);
+      cursor: default;
+    }
+    
+  }
+
+  .content {
+    margin: 0 auto;
+    width: var(--content-width);
+
+
+    h1 {
+      font-size: 350%;
+      line-height: 40px;
+    }
+
+    h3 {
+      font-size: 200%;
+    }
+
+    .name {
+      font-size: 150%;
+      line-height: 100px;
+    }
+
+    ul {
+      margin-block-start: 10px;
+
+    }
+
+  }
+
+  footer {
+    background: #01233c;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: x-small;
+  }
+
+  .footer-content {
+    margin: auto;
+    text-align: center;
+    width: var(--content-width);
+
+    a {
+      display: inline;
+    }
+  }
+}
 
 /* Commented out animation for later reference */
 

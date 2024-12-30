@@ -1,11 +1,15 @@
 # Jess Lark Portfolio 2025
 
 ## Ideas and Plans
-- add content
+- handle changing classes on nav
+- add projects
+- add blog
 - create dark and light templates
-- add animations in background when scrolling
-- add aniations off toggle
+- add ability to see page without styling
 - add favicon
+- check accessibility
+- spell check
+- get design and grammar and etc feedback
 - actually write some blog posts
   - French, books, learning stuff, etc
 

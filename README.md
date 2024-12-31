@@ -1,7 +1,7 @@
 # Jess Lark Portfolio 2025
 
 ## Ideas and Plans
-- handle changing classes on nav
+- extrapolate nav and each content in own components
 - add projects
 - add blog
 - create dark and light templates
@@ -15,19 +15,20 @@
 
 ## What Is This For
 
-This is a project to display some of y favorite projects, and to host my blog.
+This is a project to display some of my favorite projects, and to host my blog.
 
 ## Why Build it This Way
 
 React is fun and the primary technology I work with at work. I used CRA for two reasons: 
-- One, it's a very low barrier to entry for people who are comfortable in React but haven't used  the currently recommended frameworks.
-- Two, I've struggled with getting comfortable with fixing dependencies and this seems like a great opportunity to learn. 
+- One, it's a very low barrier to entry for people who are comfortable in React but haven't used the currently recommended frameworks.
+- Two, I've been intending to get more comfortable with fixing dependencies and this seems like a great opportunity to learn. 
 
 ## Hosting
 
 This project is hosted on hithub pages because it is free and easy to use.
 
 ## Updating the App
+Change the JSX and see what happens! 
 
 ### MUI Icons
 Usage: https://mui.com/material-ui/icons/

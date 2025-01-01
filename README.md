@@ -1,13 +1,14 @@
 # Jess Lark Portfolio 2025
 
 ## Ideas and Plans
-- extrapolate nav and each content in own components
+- extrapolate nav and footer in own components
 - add projects
 - add blog
 - create dark and light templates
 - add ability to see page without styling
 - add favicon
 - check accessibility
+- tests
 - spell check
 - get design and grammar and etc feedback
 - actually write some blog posts

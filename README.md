@@ -14,6 +14,27 @@
 - actually write some blog posts
   - French, books, learning stuff, etc
 
+## Project List
+Cool stuff I want included here.
+- bar chart 
+- rose curves 
+- pixel art
+- word clock
+- code poetry
+- dictionary
+
+## Future Project Ideas
+- more art
+- games
+- tic tac sound?
+- weather app
+
+## Project Notes
+Project notes should include:
+- who what when where why how
+- pros and cons of approaches
+- reasoning for testing or not, etc
+
 ## What Is This For
 
 This is a project to display some of my favorite projects, and to host my blog.

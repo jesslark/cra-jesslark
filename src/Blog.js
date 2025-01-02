@@ -34,16 +34,17 @@ export default function Blog() {
               <h1>
                 <Markdown>{postData.title}</Markdown>
               </h1>
-              <h6>
-                posted <Markdown>{postData.created_at}</Markdown>
-              </h6>
-              {postData.created_at != postData.edited_at ? (
+              <p>
+                posted{" "}
+                <Markdown className="post-date">{postData.created_at}</Markdown>
+              </p>
+              {/* {postData.created_at != postData.edited_at ? (
                 <h6>
                   edited <Markdown>{postData.updated_at}</Markdown>
                 </h6>
               ) : (
                 " "
-              )}
+              )} */}
               <Markdown>{postData.body}</Markdown>
               <hr />
             </span>

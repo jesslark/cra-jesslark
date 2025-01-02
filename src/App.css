@@ -135,6 +135,11 @@
     h1 {
       font-size: 24px;
     }
+
+    .post-date {
+      display: inline-block;
+      font-size: 12px;
+    }
   }
 
   footer {

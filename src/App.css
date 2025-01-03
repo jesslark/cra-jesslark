@@ -25,11 +25,15 @@
   --content-width: 900px;
 }
 
+.dark {
+  background-color: var(--mainback);
+}
+
 .app {
   position: relative;
   background: var(--mainback);
   color: var(--text);
-  height: 100vh;
+  min-height: 100vh;
   
   a {
     color: var(--linkcolor);

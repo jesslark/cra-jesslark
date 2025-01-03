@@ -59,6 +59,21 @@ export default function Blog() {
 
   return (
     <div className="content">
+      <h1>
+        Welcome to my
+        <br />
+        <span className="name">Blog About Anything</span>.
+      </h1>
+      <h5>
+        Among other topics, that might include:
+        <ul>
+          <li>web development & design</li>
+          <li>books, games, & movies</li>
+          <li>art, craft, & learning</li>
+          <li>how all these things impact each other</li>
+        </ul>
+      </h5>
+      <hr />
       {posts ? posts : "Submarine is hunting little bits of content treasure"}
       {/* <h1>blog coming soon!</h1>
       <p>

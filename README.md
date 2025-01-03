@@ -3,7 +3,13 @@
 ## Ideas and Plans
 - extrapolate nav and footer in own components
 - add projects
-- add blog
+- polish blog
+  - nicer formatting
+  - calendar picker?
+  - list of posts?
+  - sort by recent or first
+  - pinned post
+  - sort by topic tags?
 - create dark and light templates
 - add ability to see page without styling
 - add favicon

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import Markdown from "react-markdown"
+import { days, months } from "./utils"
 
 export default function Blog() {
   const [data, setData] = useState(null)
@@ -29,20 +30,24 @@ export default function Blog() {
       <div className="posts">
         {data.map(postData => {
           const postDate = new Date(postData.created_at)
-          const displayDate = "Monday May 24, 1998 at 13:52"
-          // const displayDate = `${getDay(postDate)} ${getMonth(
-          //   postDate
-          // )} ${getDate(postDate)}, ${getFullYear(postDate)} at ${gethours(
-          //   postDate
-          // )}:${getMinutes(postDate)}`
-          console.log(postDate)
+          const dDay = days[postDate.getDay()]
+          const dMon = months[postDate.getMonth()]
+          const dDate = postDate.getDate()
+          const dYear = postDate.getFullYear()
+          const dHrs = postDate.getHours()
+          const dMins =
+            postDate.getMinutes() > 9
+              ? postDate.getMinutes()
+              : `0${postDate.getMinutes()}`
+          const displayDate = `${dDay} ${dMon} ${dDate}, ${dYear} at ${dHrs}:${dMins}`
+
           return (
             <span key={postData.id}>
-              <h1>
+              <h1 className="post-title">
                 <Markdown>{postData.title}</Markdown>
               </h1>
-              <div className="post-date">
-                posted <Markdown>{displayDate}</Markdown>
+              <div classNae="post-display-date">
+                posted <Markdown className="post-date">{displayDate}</Markdown>
               </div>
               {/* {postData.created_at != postData.edited_at ? (
                 <h6>

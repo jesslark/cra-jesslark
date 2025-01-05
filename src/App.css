@@ -140,6 +140,18 @@
       font-size: 24px;
     }
 
+    .post-title h1 {
+      margin: 0;
+      margin-bottom: 5px;
+
+      p {
+          margin: 0;
+      }
+    }
+
+    .post-display-date {
+      font-size: 12px;
+    }
     .post-date {
       display: inline-block;
       font-size: 12px;

@@ -28,16 +28,22 @@ export default function Blog() {
     const postContent = (
       <div className="posts">
         {data.map(postData => {
-          console.log(postData)
+          const postDate = new Date(postData.created_at)
+          const displayDate = "Monday May 24, 1998 at 13:52"
+          // const displayDate = `${getDay(postDate)} ${getMonth(
+          //   postDate
+          // )} ${getDate(postDate)}, ${getFullYear(postDate)} at ${gethours(
+          //   postDate
+          // )}:${getMinutes(postDate)}`
+          console.log(postDate)
           return (
             <span key={postData.id}>
               <h1>
                 <Markdown>{postData.title}</Markdown>
               </h1>
-              <p>
-                posted{" "}
-                <Markdown className="post-date">{postData.created_at}</Markdown>
-              </p>
+              <div className="post-date">
+                posted <Markdown>{displayDate}</Markdown>
+              </div>
               {/* {postData.created_at != postData.edited_at ? (
                 <h6>
                   edited <Markdown>{postData.updated_at}</Markdown>

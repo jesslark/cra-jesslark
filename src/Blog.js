@@ -46,7 +46,7 @@ export default function Blog() {
               <h1 className="post-title">
                 <Markdown>{postData.title}</Markdown>
               </h1>
-              <div classNae="post-display-date">
+              <div className="post-display-date">
                 posted <Markdown className="post-date">{displayDate}</Markdown>
               </div>
               {/* {postData.created_at != postData.edited_at ? (
